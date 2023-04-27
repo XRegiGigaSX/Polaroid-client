@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = axios.create({baseURL: 'https://polaroid-api.vercel.app/'})
+const API = axios.create({baseURL: 'https://polaroid-api.netlify.app'})
 // const url = 'http://localhost:3001/posts';
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('profile')){
