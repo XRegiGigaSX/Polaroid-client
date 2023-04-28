@@ -7,7 +7,8 @@ export default makeStyles((theme) => ({
     // margin: '30px 0',
     position: 'sticky',
     top: '0',
-    backgroundColor: 'rgba(0, 0, 0, 0.35)',
+    backgroundColor: 'rgba(240, 240, 240, 0.35)',
+    backdropFilter: 'blur(10px)',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -15,20 +16,25 @@ export default makeStyles((theme) => ({
     padding: '0.7em 2em',
     
   },
+  signinTypo: {
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '0.5em'
+    },
+  },
   logout: {
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('sm')]: {
       display: 'none'
     },
   },
   heading: {
     color: 'rgba(0,183,255, 1)',
     textDecoration: 'none',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: '2.5em'
     },
   },
   image: {
-    marginLeft: '15px',
+    marginRight: '0.2em',
   },
   toolbar: {
     display: 'flex',
@@ -42,35 +48,36 @@ export default makeStyles((theme) => ({
   profile: {
     display: 'flex',
     justifyContent: 'space-between',
+    alignItems: 'center',
     width: '400px',
     color: 'rgb(255, 255, 255)',
-    
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'row-reverse'
+    },
   },
   username: {
     display: 'flex',
     alignItems: 'center',
-    [theme.breakpoints.down('xs')]: {
-      visibility: 'hidden'
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
     },
   },
   brandContainer: {
-    display: 'flex',
-    alignItems: 'center',
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '1em'
+    [theme.breakpoints.down('sm')]: {
+      scale: '0.6'
     },
   },
   purple: {
     color: theme.palette.getContrastText(deepPurple[500]),
     backgroundColor: deepPurple[500],
-    [theme.breakpoints.down('xs')]: {
-      visibility: 'hidden'
-    },
+    // [theme.breakpoints.down('sm')]: {
+    //   visibility: 'show'
+    // },
   },
   mobileMenu: {
-    color: 'white',
-    [theme.breakpoints.up('sm')]: {
+    // color: 'white',
+    // [theme.breakpoints.up('sm')]: {
       display: 'none'
-    },
+    // },
   }
 }));

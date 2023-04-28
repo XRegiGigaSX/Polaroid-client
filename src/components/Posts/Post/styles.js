@@ -15,9 +15,12 @@ export default makeStyles({
   },
   card: {
     display: 'flex',
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    backdropFilter: 'blur(15px)',
     flexDirection: 'column',
     justifyContent: 'space-between',
     borderRadius: '15px',
+    color: 'rgb(195, 195, 195)',
     height: '100%',
     position: 'relative',
   },
@@ -43,6 +46,7 @@ export default makeStyles({
   },
   title: {
     padding: '0 16px',
+    color: 'rgb(245, 245, 245)'
   },
   cardActions: {
     padding: '0 16px 8px 16px',

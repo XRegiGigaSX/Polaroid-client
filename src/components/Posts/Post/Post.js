@@ -35,7 +35,7 @@ export default function Post({ post, setCurrentId }) {
                
             </div>
             <div className={classes.details} onClick={openPost} >
-                <Typography variant="body2" color="textSecondary">{post.tags.map((tag) => `#${tag} `)}</Typography>
+                <Typography variant="body2">{post.tags.map((tag) => `#${tag} `)}</Typography>
 
             </div>
                 <Typography variant="h5" className={classes.title} gutterBottom>{post.title}</Typography>

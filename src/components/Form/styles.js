@@ -9,6 +9,14 @@ export default makeStyles((theme) => ({
   },
   paper: {
     padding: theme.spacing(2),
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    backdropFilter: 'blur(15px)',
+    color: 'white'
+  },
+  input: {
+    color: 'white',
+    backgroundColor: 'rgba(255, 255, 255, 0.4)',
+    borderRadius: '0.3em'
   },
   form: {
     display: 'flex',
