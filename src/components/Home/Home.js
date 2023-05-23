@@ -95,7 +95,7 @@ function Home() {
           spacing={3}
         >
           <Grid item xs={12} sm={11} md={11} className={classes.PostContainer}>
-            <Posts setCurrentId={setCurrentId} />
+            <Posts setCurrentId={setCurrentId} handleNewPost={handleNewPost}/>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
           {!searchQuery && !tags.length && (

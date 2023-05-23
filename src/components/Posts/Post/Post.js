@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux'
 import { deletePost, likePost } from '../../../actions/posts.js'
 import {useHistory} from 'react-router-dom'
 
-export default function Post({ post, setCurrentId }) {
+export default function Post({ post, setCurrentId, handleNewPost }) {
 
     const classes = useStyles();
     const dispatch = useDispatch();
@@ -29,7 +29,7 @@ export default function Post({ post, setCurrentId }) {
                 <Typography variant="body2">{moment(post.createdAt).fromNow()}</Typography>
             </div>
             <div className={classes.overlay2}>
-            {post?.creator === user?.result?._id ? <Button style={{ color: 'white' }} size="small" onClick={() => setCurrentId(post._id) } >
+            {post?.creator === user?.result?._id ? <Button style={{ color: 'white' }} size="small" onClick={() => {setCurrentId(post._id); handleNewPost()} } >
                     <MoreHorizIcon fontSize="medium" />
                 </Button> : ""}
                

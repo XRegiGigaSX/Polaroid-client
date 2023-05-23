@@ -39,7 +39,7 @@ const PostDetails = () => {
     const openPost = (_id) => history.push(`/posts/${_id}`)
 
   return (
-    <Paper style={{padding: '20px', borderRadius: '15px'}} elevation={6}>
+    <Paper style={{padding: '20px', backgroundColor: 'rgba(220, 220, 220, 0.5)'}} elevation={6}>
 
     <div className={classes.card}>
         <div className={classes.section}>

@@ -23,6 +23,7 @@ export default makeStyles((theme) => ({
   },
   section: {
     // borderRadius: '20px',
+    backgroundColor: 'transparent',
     width: '45%',
     margin: '10px',
     display: 'flex',
