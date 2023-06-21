@@ -107,7 +107,7 @@ function Auth() {
                         }
                         onSuccess={googleSuccess}
                         onError={googleFailure}
-                        useOneTap
+                        useOneTap={true}
                         cookiePolicy="single_host_origin"
                     />
                     <Grid container justifyContent="flex-end">

@@ -1,6 +1,8 @@
 import axios from 'axios'
 
-const API = axios.create({baseURL: 'https://polaroid-api.onrender.com/'})
+// const API = axios.create({baseURL: 'https://polaroid-api.onrender.com/'})
+const API = axios.create({baseURL: 'http://localhost:3001/'})
+// http://localhost:3000/
 // https://polaroid-api.netlify.app
 // const url = 'http://localhost:3001/posts';
 API.interceptors.request.use((req) => {
@@ -22,3 +24,4 @@ export const comment = (value, id) => API.post(`/posts/${id}/commentPost`, {valu
 export const googleSignIn = (result) => API.post('/user/googlesignin', result)
 export const signIn = (formData) => API.post('/user/signin', formData)
 export const signUp = (formData) => API.post('/user/signup', formData)
+``
